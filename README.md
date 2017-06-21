@@ -21,6 +21,6 @@ $ docker inspect --format '{{ .NetworkSettings.IPAddress }}' rethinkdb
 - Access RethinkDB Web UI - ```rethinkdb_ip:8080```
 
 - Run ruby codes to create a table/collection, insert documents, select, update, and/or delete them
-    - e.g. ```ruby create.rb```
-    - To enable console change-feed, use ```ruby changefeed.rb```
+    - e.g. ```ruby src/create.rb```
+    - To enable console change-feed, use ```ruby src/changefeed.rb```
     - These actions could all be done using Web UI
