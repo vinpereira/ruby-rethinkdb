@@ -24,7 +24,3 @@ puts 'Get documents based on posts quantity (> 2)'
 cursor = r.table("authors").filter{|author| author["posts"].count > 2}.run
 cursor.each{ |document| p document }
 puts
-
-# Updates documents
-## Update all documents
-r.table("authors").update({"type"=>"fictional"}).run
